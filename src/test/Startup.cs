@@ -28,6 +28,7 @@ namespace test
                 app.UseDeveloperExceptionPage();
             }
 
+            //all the services should be before Run.
             app.Run(async (context) =>
             {
                 await context.Response.WriteAsync("Hello World!");
